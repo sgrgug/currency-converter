@@ -1,6 +1,6 @@
 <?php
 
-namespace CurrencyConverter;
+namespace Sgrgrg\CurrencyConverter;
 
 class CurrencyConverter
 {
