@@ -1,0 +1,1 @@
+{"version":1,"defects":{"CurrencyConverterTest::testConvert":7},"times":{"CurrencyConverterTest::testConvert":0.006,"CurrencyConverterTest::testExample":0,"CurrencyConverterTest::test_convert":0.006,"CurrencyConverterTest::test_example":0}}

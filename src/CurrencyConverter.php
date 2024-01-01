@@ -44,10 +44,10 @@ class CurrencyConverter
     {
         if($this->source == "USD" && $this->target == "NPR")
         {
-            return $this->currency * 133.11;
+            return number_format($this->currency * 133.11, 2);
         } elseif ($this->source == "NPR" && $this->target == "USD")
         {
-            return $this->currency * 0.0075;
+            return number_format($this->currency * 0.0075, 2);
         }
     }
 }
