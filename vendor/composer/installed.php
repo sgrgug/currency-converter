@@ -108,7 +108,7 @@
         'phpunit/phpunit' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'fe34ee792713761c1468b7961e23cff6ecce4f49',
+            'reference' => '86c4a74b292a9f0d6fabe9103666fc95e955f9bf',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(

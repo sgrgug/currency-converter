@@ -2,6 +2,9 @@
 
 namespace Sgrgrg\CurrencyConverter;
 
+// use Sgrgrg\CurrencyConverter\API;
+require_once __DIR__ . '/API.php';
+
 class CurrencyConverter
 {
     protected $currency;
@@ -42,12 +45,17 @@ class CurrencyConverter
 
     public function get()
     {
-        if($this->source == "USD" && $this->target == "NPR")
-        {
-            return number_format($this->currency * 133.11, 2);
-        } elseif ($this->source == "NPR" && $this->target == "USD")
-        {
-            return number_format($this->currency * 0.0075, 2);
+        $currencyValue = API::base($this->source)->target($this->target)->get();
+
+        foreach($currencyValue as $key => $value){
+            $val = $value->value;
+
+            if($key == 1){
+                break;
+            }
         }
+
+        return number_format($val, 3);
+
     }
 }

@@ -37,6 +37,7 @@ final readonly class TestSuiteFilterProcessor
         if (!$configuration->hasFilter() &&
             !$configuration->hasGroups() &&
             !$configuration->hasExcludeGroups() &&
+            !$configuration->hasExcludeFilter() &&
             !$configuration->hasTestsCovering() &&
             !$configuration->hasTestsUsing()) {
             return;
@@ -72,8 +73,14 @@ final readonly class TestSuiteFilterProcessor
             );
         }
 
+        if ($configuration->hasExcludeFilter()) {
+            $this->filterFactory->addExcludeNameFilter(
+                $configuration->excludeFilter(),
+            );
+        }
+
         if ($configuration->hasFilter()) {
-            $this->filterFactory->addNameFilter(
+            $this->filterFactory->addIncludeNameFilter(
                 $configuration->filter(),
             );
         }
