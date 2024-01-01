@@ -55,7 +55,7 @@ class CurrencyConverter
             }
         }
 
-        return number_format($val, 3);
+        return number_format($val * $this->currency, 3);
 
     }
 }
