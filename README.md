@@ -11,8 +11,8 @@ A php library for Currency Currency.
 
 ## Features
 
-- Easy Syntax, Easy to use
-- Conversion only NPR, USD, INR
+- Easy Syntax, Easy to use.
+- Real time currency converter through API.
 
 
 ## Installation
@@ -26,6 +26,10 @@ Install my-project with npm
 ## Usage/Examples
 
 ```php
+
+// if you haven't use autoload
+require_once __DIR__ . '/vendor/autoload.php';
+
 use Sgrgrg\CurrencyConverter\CurrencyConverter;
 
 echo CurrencyConverter::convert(2)->from('USD')->to('NPR')->get();
