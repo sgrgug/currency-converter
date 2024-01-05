@@ -3,7 +3,7 @@
     "description": "A php library for currency converter",
     "type": "library",
     "license": "MIT",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "autoload": {
         "psr-4": {
             "Sgrgrg\\CurrencyConverter\\": "src/"

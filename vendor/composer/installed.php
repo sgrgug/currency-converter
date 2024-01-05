@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'sgrgrg/currency-converter',
-        'pretty_version' => '1.2.0',
-        'version' => '1.2.0.0',
+        'pretty_version' => '1.2.1',
+        'version' => '1.2.1.0',
         'reference' => NULL,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
@@ -282,8 +282,8 @@
             'dev_requirement' => true,
         ),
         'sgrgrg/currency-converter' => array(
-            'pretty_version' => '1.2.0',
-            'version' => '1.2.0.0',
+            'pretty_version' => '1.2.1',
+            'version' => '1.2.1.0',
             'reference' => NULL,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
